@@ -12,7 +12,9 @@ using namespace std;
 #include "GrayscaleImage.h"
 
 GrayscaleImage::GrayscaleImage(int heightVal, int widthVal){
-    
+    m_height = heightVal;
+    m_width = widthVal;
+    m_
 }
 
 int GrayscaleImage::getWidth() const {
