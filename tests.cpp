@@ -21,25 +21,25 @@ using namespace std;
 
 // Helpers:
 
-void wipe(GrayscaleImage& img)
-{
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 5; j++) {
-      img.setPixel(i, j, 0);
-    }
-  }
-}
-void getGradientFill(GrayscaleImage& img)
-{
-  uint8_t data[3][5] = {
-      {0, 63, 127, 191, 255}, {0, 63, 127, 191, 255}, {0, 63, 127, 191, 255}};
+// void wipe(GrayscaleImage& img)
+// {
+//   for (int i = 0; i < 3; i++) {
+//     for (int j = 0; j < 5; j++) {
+//       img.setPixel(i, j, 0);
+//     }
+//   }
+// }
+// void getGradientFill(GrayscaleImage& img)
+// {
+//   uint8_t data[3][5] = {
+//       {0, 63, 127, 191, 255}, {0, 63, 127, 191, 255}, {0, 63, 127, 191, 255}};
 
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 5; j++) {
-      img.setPixel(i, j, data[i][j]);
-    }
-  }
-}
+//   for (int i = 0; i < 3; i++) {
+//     for (int j = 0; j < 5; j++) {
+//       img.setPixel(i, j, data[i][j]);
+//     }
+//   }
+// }
 
 // Tests:
 TEST_CASE("constructor")
