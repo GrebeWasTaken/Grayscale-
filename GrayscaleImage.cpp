@@ -14,7 +14,7 @@ using namespace std;
 GrayscaleImage::GrayscaleImage(int heightVal, int widthVal){
     m_height = heightVal;
     m_width = widthVal;
-    m_
+    m_pixels = new uint8_t
 }
 
 int GrayscaleImage::getWidth() const {
