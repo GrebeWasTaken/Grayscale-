@@ -17,7 +17,7 @@ GrayscaleImage::GrayscaleImage(int heightVal, int widthVal)
   m_width = widthVal;
 //   m_pixels = new uint8_t[m_height * m_width];
 
-  // fill(0);
+  fill(0);
 }
 
 int GrayscaleImage::getWidth() const
