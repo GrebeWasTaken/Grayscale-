@@ -16,12 +16,12 @@ CXXFLAGS += -std=c++20 -fmodules-ts -pedantic -pedantic-errors
 CXXFLAGS += -Wfloat-equal -Wredundant-decls -Wshadow -Wconversion -Wuninitialized
 
 # list your .h files here
-HEADERS = Grayscale.h
+HEADERS = GrayscaleImage.h
 
 # list .cpp files here according to main program, tests, or both
 PROGRAM_FILES = main.cpp
 TEST_FILES = tests.cpp
-SHARED_FILES = Grayscale.cpp
+SHARED_FILES = GrayscaleImage.cpp
 
 .PHONY: all
 all: program.exe tests.exe
