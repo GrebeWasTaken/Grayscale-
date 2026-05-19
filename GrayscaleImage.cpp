@@ -11,6 +11,7 @@ using namespace std;
 
 #include "GrayscaleImage.h"
 
+GrayscaleImage::GrayscaleImage(int heightVal
 
 int GrayscaleImage::getWidth() const {
     return m_width;
