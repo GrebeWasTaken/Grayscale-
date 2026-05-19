@@ -13,6 +13,8 @@ using namespace std;
 
 
 int GrayscaleImage::getWidth() const {
+
+    
     return m_width;
 }
 
