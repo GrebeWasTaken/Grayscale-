@@ -138,5 +138,9 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
 }
 
 GrayscaleImage& GrayscaleImage::operator= (const GrayscaleImage& other){
-  if(this != &other)
+  if(this != &other){
+    delete[] m_pixels;
+
+    
+  }
 }
