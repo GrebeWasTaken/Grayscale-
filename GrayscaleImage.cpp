@@ -85,5 +85,5 @@ bool GrayscaleImage::operator==(const GrayscaleImage& other) const{
   return true;
 }
 
-GrayscaleImage GrayscaleImage::addFrame
+GrayscaleImage GrayscaleImage::addFrame(int padding, uint)
 
