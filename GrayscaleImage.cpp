@@ -81,6 +81,7 @@ bool GrayscaleImage::operator==(const GrayscaleImage& other) const{
       return false;
     }
   }
-  
+
+  return true;
 }
 
