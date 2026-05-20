@@ -150,4 +150,6 @@ GrayscaleImage& GrayscaleImage::operator= (const GrayscaleImage& other){
       m_pixels[i] = other.m_pixels[i];
     }
   }
+
+  return *this;
 }
