@@ -137,4 +137,6 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
   }
 }
 
-GrayscaleImage& GrayscaleImage::operator= (const GrayscaleImage& other)
+GrayscaleImage& GrayscaleImage::operator= (const GrayscaleImage& other){
+  if(this != )
+}
