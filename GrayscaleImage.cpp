@@ -128,5 +128,7 @@ GrayscaleImage GrayscaleImage::crop(int startRow, int startCol, int newHeight,
 
 GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
   m_height = other.m_height;
-  m_
+  m_width = other.m_width;
+
+  
 }
