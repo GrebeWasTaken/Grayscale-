@@ -71,5 +71,7 @@ string GrayscaleImage::toString() const{
   return result;
 }
 
-bool GrayscaleImage::operator==(const GrayscaleImage)
+bool GrayscaleImage::operator==(const GrayscaleImage& other) const{
+  if ()
+}
 
