@@ -101,4 +101,6 @@ GrayscaleImage GrayscaleImage::addFrame(int padding, uint8_t brightness) const{
   return framedImage;
 }
 
-GrayscaleImage GrayscaleImage::crop()
+GrayscaleImage GrayscaleImage::crop(int startRow, int startCol, int newHeight, int newWidth) const{
+  
+}
