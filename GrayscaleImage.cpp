@@ -130,5 +130,5 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
   m_height = other.m_height;
   m_width = other.m_width;
 
-  m_pixels = new uint
+  m_pixels = new uint8_t[m_height ]
 }
