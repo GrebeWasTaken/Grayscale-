@@ -136,3 +136,4 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
     m_pixels[i] = other.m_pixels[i];
   }
 }
+
