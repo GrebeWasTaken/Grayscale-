@@ -94,7 +94,7 @@ GrayscaleImage GrayscaleImage::addFrame(int padding, uint8_t brightness) const{
 
   for (int row = 0; row < m_height; row++){
     for (int col = 0; col < m_width; col++){
-      framedImage.setPixel(row + padding, col + padding)
+      framedImage.setPixel(row + padding, col + padding, getPixel(row, col))
     }
   }
 }
