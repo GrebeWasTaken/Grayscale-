@@ -90,6 +90,6 @@ GrayscaleImage GrayscaleImage::addFrame(int padding, uint8_t brightness) const{
   int newWidth = m_width + padding *2;
 
   GrayscaleImage framedImage(newHeight, newWidth);
-  framedImage.fill()
+  framedImage.fill(brightness)
 }
 
