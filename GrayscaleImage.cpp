@@ -63,6 +63,7 @@ string GrayscaleImage::toString() const{
 
   for (int row = 0; row < m_height; row++){
     for (int col = 0; col < m_width; col++){
+      result 
   }
 }
 
