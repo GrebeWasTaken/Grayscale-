@@ -18,7 +18,7 @@ GrayscaleImage::GrayscaleImage(int heightVal, int widthVal)
   
   m_pixels = new uint8_t[m_height * m_width];
 
-  for(int i = 0; i < m_height * m_)
+  for(int i = 0; i < m_height * m_width; i++)
 }
 
 GrayscaleImage::~GrayscaleImage(){
