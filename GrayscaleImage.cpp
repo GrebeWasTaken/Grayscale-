@@ -106,5 +106,5 @@ GrayscaleImage GrayscaleImage::crop(int startRow, int startCol, int newHeight, i
     throw out_of_range("invalid crop");
   }
 
-  GrayscaleImage cropp
+  GrayscaleImage croppedImage(newHeight, new)
 }
