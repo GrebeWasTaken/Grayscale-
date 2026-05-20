@@ -79,19 +79,19 @@ TEST_CASE("setPixel")
   }
 }
 
-// TEST_CASE("fill")
-// {
-//   cout << "3: fill" << endl;
-//   GrayscaleImage g(10, 8);
+TEST_CASE("fill")
+{
+  cout << "3: fill" << endl;
+  GrayscaleImage g(10, 8);
 
-//   g.fill(101);
+  g.fill(101);
 
-//   for (int i = 0; i < g.getHeight(); i++) {
-//     for (int j = 0; j < g.getWidth(); j++) {
-//       REQUIRE(g.getPixel(i, j) == 101);
-//     }
-//   }
-// }
+  for (int i = 0; i < g.getHeight(); i++) {
+    for (int j = 0; j < g.getWidth(); j++) {
+      REQUIRE(g.getPixel(i, j) == 101);
+    }
+  }
+}
 
 // TEST_CASE("toString")
 // {
