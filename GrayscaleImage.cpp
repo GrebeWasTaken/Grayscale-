@@ -87,6 +87,8 @@ bool GrayscaleImage::operator==(const GrayscaleImage& other) const{
 
 GrayscaleImage GrayscaleImage::addFrame(int padding, uint8_t brightness) const{
   int newHeight = m_height + padding * 2;
-  int newWidth = m_
+  int newWidth = m_width + padding *2;
+
+  
 }
 
