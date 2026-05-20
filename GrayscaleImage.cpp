@@ -72,6 +72,6 @@ string GrayscaleImage::toString() const{
 }
 
 bool GrayscaleImage::operator==(const GrayscaleImage& other) const{
-  if(m_height )
+  if(m_height != other.m_height || m_width )
 }
 
