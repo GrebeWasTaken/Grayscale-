@@ -125,3 +125,5 @@ GrayscaleImage GrayscaleImage::crop(int startRow, int startCol, int newHeight,
 
   return croppedImage;
 }
+
+
