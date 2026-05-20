@@ -19,8 +19,6 @@ GrayscaleImage::GrayscaleImage(int heightVal, int widthVal)
   m_pixels = new uint8_t[m_height * m_width];
 }
 
-
-
 int GrayscaleImage::getWidth() const
 {
   return m_width;
@@ -37,3 +35,4 @@ uint8_t GrayscaleImage::getPixel(int row, int col) const
     throw out_of_range("Bad index in getPixel");
   return m_pixels[row * m_width + col];
 }
+
