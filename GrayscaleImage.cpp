@@ -77,7 +77,7 @@ bool GrayscaleImage::operator==(const GrayscaleImage& other) const{
   }
 
   for(int i = 0; i < m_height * m_width; i++){
-    if(m_pixels)
+    if(m_pixels[i] != other.m)
   }
 }
 
