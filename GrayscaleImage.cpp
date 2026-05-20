@@ -66,7 +66,7 @@ string GrayscaleImage::toString() const{
       result += to_string(getPixel(row, col));
       result += "\t";
     }
-    result 
+    result += "\n";
   }
 }
 
