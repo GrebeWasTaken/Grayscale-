@@ -68,5 +68,6 @@ string GrayscaleImage::toString() const{
     }
     result += "\n";
   }
+  return result;
 }
 

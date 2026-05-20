@@ -93,20 +93,20 @@ TEST_CASE("fill")
   }
 }
 
-// TEST_CASE("toString")
-// {
-//   cout << "4: toString" << endl;
-//   GrayscaleImage g(2, 3);
-//   g.setPixel(0, 1, 100);
-//   g.setPixel(1, 0, 25);
-//   g.setPixel(1, 2, 50);
+TEST_CASE("toString")
+{
+  cout << "4: toString" << endl;
+  GrayscaleImage g(2, 3);
+  g.setPixel(0, 1, 100);
+  g.setPixel(1, 0, 25);
+  g.setPixel(1, 2, 50);
 
-//   string produced = g.toString();
+  string produced = g.toString();
 
-//   string desired = "0\t100\t0\t\n25\t0\t50\t\n";
+  string desired = "0\t100\t0\t\n25\t0\t50\t\n";
 
-//   REQUIRE(produced == desired);
-// }
+  REQUIRE(produced == desired);
+}
 
 // TEST_CASE("operator==")
 // {
