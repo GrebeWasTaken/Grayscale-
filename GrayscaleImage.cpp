@@ -142,6 +142,8 @@ GrayscaleImage& GrayscaleImage::operator= (const GrayscaleImage& other){
     delete[] m_pixels;
 
     m_height = other.m_height;
+    m_width = other.m_width;
+
     
   }
 }
