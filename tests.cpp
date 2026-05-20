@@ -108,26 +108,26 @@ TEST_CASE("toString")
   REQUIRE(produced == desired);
 }
 
-// TEST_CASE("operator==")
-// {
-//   cout << "5: Operator ==" << endl;
-//   GrayscaleImage g(3, 5);
-//   GrayscaleImage g2(3, 5);
-//   GrayscaleImage g3(2, 2);
+TEST_CASE("operator==")
+{
+  cout << "5: Operator ==" << endl;
+  GrayscaleImage g(3, 5);
+  GrayscaleImage g2(3, 5);
+  GrayscaleImage g3(2, 2);
 
-//   CHECK(g == g2);
-//   CHECK(!(g == g3));
+  CHECK(g == g2);
+  CHECK(!(g == g3));
 
-//   // Try changing pixels and make sure == behaves correctly
-//   g2.setPixel(2, 4, 100);
-//   CHECK(!(g == g2));
+  // Try changing pixels and make sure == behaves correctly
+  g2.setPixel(2, 4, 100);
+  CHECK(!(g == g2));
 
-//   g.setPixel(2, 4, 100);
-//   CHECK(g == g2);
+  g.setPixel(2, 4, 100);
+  CHECK(g == g2);
 
-//   g2.setPixel(1, 0, 100);
-//   CHECK(!(g == g2));
-// }
+  g2.setPixel(1, 0, 100);
+  CHECK(!(g == g2));
+}
 
 // TEST_CASE("copy constuctor")
 // {
