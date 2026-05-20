@@ -133,6 +133,6 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
   m_pixels = new uint8_t[m_height * m_width];
 
   for (int i = 0; i < m_height * m_width; i++) {
-    m_pixels[i] = brightness;
+    m_pixels[i] = other.m_pixels[i];
   }
 }
