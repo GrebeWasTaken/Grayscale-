@@ -52,5 +52,7 @@ void GrayscaleImage::setPixel(int row, int col, uint8_t brightness){
   m_pixels[row * m_width + col] = brightness; 
 }
 
-void GrayscaleImage::fill(uint)
+void GrayscaleImage::fill(uint8_t brightness){
+  
+}
 
