@@ -43,3 +43,4 @@ void GrayscaleImage::setPixel(int row, int col, uint8_t brightness){
     throw out_of_range("bad index"); //error message
   }
 }
+
