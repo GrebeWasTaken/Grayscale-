@@ -36,4 +36,6 @@ uint8_t GrayscaleImage::getPixel(int row, int col) const
   return m_pixels[row * m_width + col];
 }
 
-void GrayscaleImage::setPixel(int row, int col, uint)
+void GrayscaleImage::setPixel(int row, int col, uint8_t brightness){
+  
+}
