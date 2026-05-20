@@ -59,6 +59,6 @@ void GrayscaleImage::fill(uint8_t brightness){
 }
 
 string GrayscaleImage::toString() const{
-  string res
+  string result = ""
 }
 
