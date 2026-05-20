@@ -132,5 +132,5 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
 
   m_pixels = new uint8_t[m_height * m_width];
 
-  for 
+  for()
 }
