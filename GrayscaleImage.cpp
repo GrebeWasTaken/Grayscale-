@@ -40,6 +40,6 @@ void GrayscaleImage::setPixel(int row, int col, uint8_t brightness){
   m_pixels[row * m_width + col] = brightness;
 
   if(row >= m_height || row < 0 || col >= m_width || col < 0){
-    throw out_of_range("")
+    throw out_of_range("bad index"); 
   }
 }
