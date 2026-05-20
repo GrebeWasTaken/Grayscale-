@@ -137,3 +137,4 @@ GrayscaleImage::GrayscaleImage(const GrayscaleImage& other){
   }
 }
 
+GrayscaleImage
