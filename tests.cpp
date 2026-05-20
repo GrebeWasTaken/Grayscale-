@@ -163,42 +163,42 @@ TEST_CASE("operator==")
 //   REQUIRE(g2 == gradient);
 // }
 
-// TEST_CASE("addFrame")
-// {
-//   cout << "8: addFrame" << endl;
-//   GrayscaleImage g(3, 5);
-//   getGradientFill(g); // Add some stuff to it
+TEST_CASE("addFrame")
+{
+  cout << "8: addFrame" << endl;
+  GrayscaleImage g(3, 5);
+  getGradientFill(g); // Add some stuff to it
 
-//   // Make a version with a 1 px border with brightness 111
-//   GrayscaleImage g2 = g.addFrame(1, 111);
+  // Make a version with a 1 px border with brightness 111
+  GrayscaleImage g2 = g.addFrame(1, 111);
 
-//   // These will display if you fail this test
-//   INFO("g original:\n", g.toString());
-//   INFO("g2 (frame):\n", g2.toString());
+  // These will display if you fail this test
+  INFO("g original:\n", g.toString());
+  INFO("g2 (frame):\n", g2.toString());
 
-//   REQUIRE(g2.getHeight() == 5);
-//   REQUIRE(g2.getWidth() == 7);
-//   // Test a few pixels
-//   REQUIRE(g2.getPixel(0, 2) == 111);
-//   REQUIRE(g2.getPixel(1, 0) == 111);
-//   REQUIRE(g2.getPixel(2, 6) == 111);
-//   REQUIRE(g2.getPixel(4, 3) == 111);
-//   REQUIRE(g2.getPixel(3, 3) == 127);
+  REQUIRE(g2.getHeight() == 5);
+  REQUIRE(g2.getWidth() == 7);
+  // Test a few pixels
+  REQUIRE(g2.getPixel(0, 2) == 111);
+  REQUIRE(g2.getPixel(1, 0) == 111);
+  REQUIRE(g2.getPixel(2, 6) == 111);
+  REQUIRE(g2.getPixel(4, 3) == 111);
+  REQUIRE(g2.getPixel(3, 3) == 127);
 
-//   // Make a version with 2 px black border around the 1px 111 border
-//   GrayscaleImage g3 = g2.addFrame(2, 0);
+  // Make a version with 2 px black border around the 1px 111 border
+  GrayscaleImage g3 = g2.addFrame(2, 0);
 
-//   // These will display if you fail this test
-//   INFO("g2:\n", g2.toString());
-//   INFO("g3:\n", g3.toString());
+  // These will display if you fail this test
+  INFO("g2:\n", g2.toString());
+  INFO("g3:\n", g3.toString());
 
-//   REQUIRE(g3.getHeight() == 9);
-//   REQUIRE(g3.getWidth() == 11);
-//   // Test a few pixels
-//   REQUIRE(g3.getPixel(0, 1) == 0);
-//   REQUIRE(g3.getPixel(2, 4) == 111);
-//   REQUIRE(g3.getPixel(4, 4) == 63);
-// }
+  REQUIRE(g3.getHeight() == 9);
+  REQUIRE(g3.getWidth() == 11);
+  // Test a few pixels
+  REQUIRE(g3.getPixel(0, 1) == 0);
+  REQUIRE(g3.getPixel(2, 4) == 111);
+  REQUIRE(g3.getPixel(4, 4) == 63);
+}
 
 // TEST_CASE("crop")
 // {
