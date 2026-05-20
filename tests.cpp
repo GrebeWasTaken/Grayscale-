@@ -57,27 +57,27 @@ TEST_CASE("constructor")
   }
 }
 
-// TEST_CASE("setPixel")
-// {
-//   cout << "2: setPixel" << endl;
-//   GrayscaleImage g(3, 5);
+TEST_CASE("setPixel")
+{
+  cout << "2: setPixel" << endl;
+  GrayscaleImage g(3, 5);
 
-//   REQUIRE(g.getWidth() == 5);
-//   REQUIRE(g.getHeight() == 3);
+  REQUIRE(g.getWidth() == 5);
+  REQUIRE(g.getHeight() == 3);
 
-//   // Test setting a pixel
-//   g.setPixel(1, 2, 100);
-//   REQUIRE(g.getPixel(1, 2) == 100);
+  // Test setting a pixel
+  g.setPixel(1, 2, 100);
+  REQUIRE(g.getPixel(1, 2) == 100);
 
-//   // Test that other pixels are unchanged
-//   for (int i = 0; i < 3; i++) {
-//     for (int j = 0; j < 5; j++) {
-//       if (i == 1 && j == 2)
-//         continue;
-//       REQUIRE(g.getPixel(i, j) == 0);
-//     }
-//   }
-// }
+  // Test that other pixels are unchanged
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 5; j++) {
+      if (i == 1 && j == 2)
+        continue;
+      REQUIRE(g.getPixel(i, j) == 0);
+    }
+  }
+}
 
 // TEST_CASE("fill")
 // {
