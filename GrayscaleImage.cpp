@@ -61,6 +61,8 @@ void GrayscaleImage::fill(uint8_t brightness){
 string GrayscaleImage::toString() const{
   string result = "";
 
-  for (int row = 0; row < m_height)
+  for (int row = 0; row < m_height; row++){
+    for 
+  }
 }
 
