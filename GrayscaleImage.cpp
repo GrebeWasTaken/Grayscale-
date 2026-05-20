@@ -90,6 +90,9 @@ GrayscaleImage GrayscaleImage::addFrame(int padding, uint8_t brightness) const{
   int newWidth = m_width + padding *2;
 
   GrayscaleImage framedImage(newHeight, newWidth);
-  framedImage.fill(brightness)
+  framedImage.fill(brightness);
+
+  for (int row = 0; row < m_height; row++){
+    for (int col = 0; col < m_width; col++){
 }
 
