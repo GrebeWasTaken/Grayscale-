@@ -200,57 +200,57 @@ TEST_CASE("addFrame")
   REQUIRE(g3.getPixel(4, 4) == 63);
 }
 
-// TEST_CASE("crop")
-// {
-//   cout << "9a: crop" << endl;
-//   GrayscaleImage g(3, 5);
-//   getGradientFill(g); // Add some stuff to it
+TEST_CASE("crop")
+{
+  cout << "9a: crop" << endl;
+  GrayscaleImage g(3, 5);
+  getGradientFill(g); // Add some stuff to it
 
-//   GrayscaleImage g2 = g.crop(0, 0, 2, 3);
+  GrayscaleImage g2 = g.crop(0, 0, 2, 3);
 
-//   // These will display if you fail this test
-//   INFO("g original:\n", g.toString());
-//   INFO("g2 (crop) :\n", g2.toString());
+  // These will display if you fail this test
+  INFO("g original:\n", g.toString());
+  INFO("g2 (crop) :\n", g2.toString());
 
-//   REQUIRE(g2.getHeight() == 2);
-//   REQUIRE(g2.getWidth() == 3);
+  REQUIRE(g2.getHeight() == 2);
+  REQUIRE(g2.getWidth() == 3);
 
-//   REQUIRE(g2.getPixel(0, 0) == 0);
-//   REQUIRE(g2.getPixel(1, 1) == 63);
-//   REQUIRE(g2.getPixel(1, 2) == 127);
+  REQUIRE(g2.getPixel(0, 0) == 0);
+  REQUIRE(g2.getPixel(1, 1) == 63);
+  REQUIRE(g2.getPixel(1, 2) == 127);
 
-//   GrayscaleImage g3 = g.crop(1, 2, 2, 2);
+  GrayscaleImage g3 = g.crop(1, 2, 2, 2);
 
-//   // These will display if you fail this test
-//   INFO("g original:\n", g.toString());
-//   INFO("g3 (crop) :\n", g3.toString());
+  // These will display if you fail this test
+  INFO("g original:\n", g.toString());
+  INFO("g3 (crop) :\n", g3.toString());
 
-//   REQUIRE(g3.getHeight() == 2);
-//   REQUIRE(g3.getWidth() == 2);
+  REQUIRE(g3.getHeight() == 2);
+  REQUIRE(g3.getWidth() == 2);
 
-//   REQUIRE(g3.getPixel(0, 0) == 127);
-//   REQUIRE(g3.getPixel(1, 1) == 191);
-// }
+  REQUIRE(g3.getPixel(0, 0) == 127);
+  REQUIRE(g3.getPixel(1, 1) == 191);
+}
 
-// TEST_CASE("invalid crop")
-// {
-//   cout << "9b: invalid crop" << endl;
-//   GrayscaleImage g(3, 5);
+TEST_CASE("invalid crop")
+{
+  cout << "9b: invalid crop" << endl;
+  GrayscaleImage g(3, 5);
 
-//   bool caught = false;
+  bool caught = false;
 
-//   try {
-//     GrayscaleImage g3 = g.crop(1, -1, 2, 2);
-//   } catch (out_of_range& e) {
-//     caught = true;
-//   }
-//   REQUIRE(caught);
+  try {
+    GrayscaleImage g3 = g.crop(1, -1, 2, 2);
+  } catch (out_of_range& e) {
+    caught = true;
+  }
+  REQUIRE(caught);
 
-//   caught = false;
-//   try {
-//     GrayscaleImage g3 = g.crop(1, 1, 6, 2);
-//   } catch (out_of_range& e) {
-//     caught = true;
-//   }
-//   REQUIRE(caught);
-// }
+  caught = false;
+  try {
+    GrayscaleImage g3 = g.crop(1, 1, 6, 2);
+  } catch (out_of_range& e) {
+    caught = true;
+  }
+  REQUIRE(caught);
+}
