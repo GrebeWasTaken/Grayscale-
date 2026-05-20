@@ -110,5 +110,9 @@ GrayscaleImage GrayscaleImage::crop(int startRow, int startCol, int newHeight, i
 
   for (int row = 0; row < m_height; row++){
     for (int col = 0; col < m_width; col++){
-      croppedImage.setPixel(row, col, getPixel(startRow + row, startCol + col)))
+      croppedImage.setPixel(row, col, getPixel(startRow + row, startCol + col));
+    }
+  }
+
+  return 
 }
